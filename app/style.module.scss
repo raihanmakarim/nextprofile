@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+}
+
+.container {
+  height: 60vh;
+  width: 70vw;
+  position: fixed;
+  left: 250px;
+  top: 20vh;
+
+  h1 {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgba(16, 16, 16, 0.847);
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-inline: 6px;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(16, 16, 16, 0.847);
+  }
+}
