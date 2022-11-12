@@ -1,4 +1,5 @@
 import style from "./style.module.scss";
+import Link from "next/link";
 
 const Navbar = async () => {
   const { wrapper, linkContainer, container, Button, logo } = style;
@@ -9,11 +10,13 @@ const Navbar = async () => {
       </div>
       <div className={container}>
         <div className={linkContainer}>
-          <button className={Button} autoFocus>
+          <Link href="/" className={Button} autoFocus>
             About
-          </button>
+          </Link>
           <button className={Button}>Projects</button>
-          <button className={Button}>Founder</button>
+          <Link href="/Founder" className={Button}>
+            Founder
+          </Link>
           <button className={Button}>Tech</button>
           <button className={Button}>Contact</button>
         </div>
